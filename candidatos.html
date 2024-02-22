@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatos Personeria y Contraloria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Permanent+Marker&family=Protest+Riot&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kode+Mono:wght@400..700&family=Permanent+Marker&family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body class="body2">
+    <header>
+        <div class="contenedor4">
+            <h1 class="titulo">Candidatos: personeria y contraloria, sede <strong>CORAZON DE PERALONZO</strong> </h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor5">
+            <div class="contenedor5-1">
+                <p class="lema1">"Unidos por un colegio donde se <br> aprende y cada voz sea escuchada."</p>
+                <img src="img/fotoper.png" alt="Foto candidata" class="img2">
+                <a href="https://www.facebook.com/monicalizeth.guevara.5?mibextid=ZbWKwL"><p class="candidata">Monica Lizeth Guevara</p></a>
+                <p class="candidata1">Candidata: Personeria</p>
+                <p class="lema2">"Cuidando los recursos y garantizando el futuro."</p>
+                <img src="img/fotocon.png" alt="Foto candidato" class="img3">
+                <a href="https://www.facebook.com/profile.php?id=100095585281821&"><p class="candidato">Johan Smith Tapiero Mariño</p></a>
+                <p class="candidato1">Candidato: Contraloria</p>
+                <p class="vota">VOTA 👉<strong>"#03"</strong></p>
+            </div>
+        </div>
+        <button onclick="abrirModal()" class="boton2"><img src="img/ingresar(1).jpg" alt="ingresar" class="imagen.finalizar {
+        top: 450px;
+        left: 80%;
+        width: 210px;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        background: #fff;
+        color: #197C07;
+        border: 2px solid #00FF00;
+        border-radius: 30px;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal
+        }
+        
+        .finalizar:hover {
+        color: #000000;
+        }
+        
+        .finalizar::after {
+        content: "";
+        background: #00FF00;
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: flex;
+        border-radius: 50%;
+        left: -50%;
+        right: -50%;
+        top: -150%;
+        bottom: -150%;
+        transform: scale(0, 0);
+        transition: all 0.4s ease;
+        }
+        
+        .finalizar:hover::after {
+        transition: all 0.6s ease-out;
+        transform: scale(1, 1);
+        }">VER PROPUESTAS</button>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <img class="modal-content" id="imagen">
+        </div>
+        <button onclick="abrirModaldos()" class="boton3"><img src="img/galeria.jpg" alt="ver fotos" class="imagen2">VER EVIDENCIAS</button>
+        <div id="myModaldos" class="modal">
+            <span class="closedos" onclick="cerrarModaldos()">&times;</span>
+            <img class="modal-contentdos" id="imagendos">
+            <button onclick="cambiarImagendos(-1)" class="cambiar">Anterior</button>
+            <button onclick="cambiarImagendos(1)"class="cambiar">Siguiente</button>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.google.com"><button class="finalizar">Finalizar</button></a>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
